@@ -1,0 +1,15 @@
+Source: bake
+Section: x11
+Priority: optional
+Maintainer: Robert Ancell <robert.ancell@gmail.com>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 7.0.50~),
+               valac-0.16
+Homepage: https://launchpad.net/bake
+
+Package: bake
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: Bake
+ Bake is an easy to use build system.

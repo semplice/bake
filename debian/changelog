@@ -1,0 +1,83 @@
+bake (0.1.0-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Install mallard files into /usr/share/help
+    - Build Vala libraries
+    - Fix searching for current Recipe in similarly named directories
+    - Link against locally generated Vala libraries
+    - Fix --debug output not being printed
+    - Improve error message on failed build
+    - Support Python libraries
+    - Install .py files if .install-sources=true
+    - Install package data with data.-.files
+    - Recipes now inherit variables from their parent
+    - Rename intltool rules to gettext
+    - Add an easy way to define variables to be passed to programs/libraries
+    - Automatically generate .desktop files for desktop applications
+    - Add C library GIR support
+  * debian/control:
+    - Build-depend on valac-0.16
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Fri, 07 Sep 2012 21:33:53 +1200
+
+bake (0.0.6-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Add Launchpad support
+    - Fix install rule for Vala programs
+    - Allow install-directory to be relative
+    - Add bzr-tag, git tag targets 
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 27 Nov 2011 22:20:12 +1100
+
+bake (0.0.5-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Add package.files variable that adds arbitrary files
+    - Allow rules without any commands
+    - Allow indent to differ between rules
+    - Add a --unconfigure option
+    - Add pretty output for valac
+    - Allow custom build, install and clean rules
+    - Fix rules in subdirectories always being run
+    - Only log directory changes if something occurs
+    - Add variable substitution
+    - Add library support
+    - Add support for .bzrignore, .gitignore
+    - Use fastvapi to speed up Vala builds
+    - Fix rules not running when inputs are modified
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 27 Nov 2011 21:18:09 +1100
+
+easy-build (0.0.3-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release:
+    - Add mono (C#) support
+    - Detect header file dependencies for C/C++ programs
+    - Build .pot and .mo files
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Thu, 29 Sep 2011 15:55:23 +1000
+
+easy-build (0.0.2-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release:
+    - Improve build messages
+    - Replace "eb expand" with "eb --expand"
+    - Allow unversioned packages
+    - Add intltool rules
+    - Add man rules
+    - Add gsettings rules
+    - Add desktop rules
+    - Add dpkg rules
+    - Add PPA rules
+    - Add RPM rules
+    - Add --verbose option
+    - Split into modules  
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 24 Sep 2011 10:31:48 +1000
+
+easy-build (0.0.1-0ubuntu1) oneiric; urgency=low
+
+  * Initial release
+
+ -- Robert Ancell <robert.ancell@gmail.com>  Sat, 17 Sep 2011 17:20:54 +1000
