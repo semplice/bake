@@ -1,3 +1,18 @@
+bake (0.1.1-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+    - Distribute test data files
+  * debian/control:
+    - Use standards version 3.9.3
+  * debian/rules:
+    - Remove LDFLAGS override
+    - Remove debugging cat
+    - Fix clean not working with source version 3.0
+  * debian/source/format:
+    - Use source version 3.0
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Mon, 15 Oct 2012 13:01:49 +1300
+
 bake (0.1.0-0ubuntu1) precise; urgency=low
 
   * New upstream release:

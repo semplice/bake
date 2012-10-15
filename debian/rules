@@ -1,11 +1,12 @@
 #!/usr/bin/make -f 
 
-LDFLAGS+=-Wl,--as-needed
-
 %:
 	dh $@
 
 override_dh_auto_configure:
 	make bake-bootstrap
 	./bake-bootstrap --configure resource-directory=/usr install-directory=debian/bake
-	cat Recipe.conf
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm Recipe.conf
