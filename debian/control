@@ -1,10 +1,10 @@
 Source: bake
-Section: x11
+Section: devel
 Priority: optional
 Maintainer: Robert Ancell <robert.ancell@gmail.com>
 Standards-Version: 3.9.3
 Build-Depends: debhelper (>= 7.0.50~),
-               valac-0.16
+               valac-0.18
 Homepage: https://launchpad.net/bake
 
 Package: bake

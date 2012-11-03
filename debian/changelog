@@ -1,3 +1,14 @@
+bake (0.1.2-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+    - Fix 'newer' test failing on filesystems without sub-second timestamps
+    - Always rebuild rule when inputs change instead of relying on timestamps
+  * debian/control:
+    - Require valac 0.18
+    - Set section to the correct value - devel
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 03 Nov 2012 19:34:21 +1300
+
 bake (0.1.1-0ubuntu1) precise; urgency=low
 
   * New upstream release
