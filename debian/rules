@@ -1,12 +1,14 @@
 #!/usr/bin/make -f 
 
+DEB_HOST_MULTIARCH := $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
 %:
 	dh $@
 
 override_dh_auto_configure:
-	make bake-bootstrap
-	./bake-bootstrap --configure resource-directory=/usr install-directory=debian/bake
+	make bake-bootstrap LIBRARY_DIRECTORY=/usr/lib/$(DEB_HOST_MULTIARCH)
+	./bake-bootstrap --configure resource-directory=/usr library-directory=/usr/lib/$(DEB_HOST_MULTIARCH) install-directory=debian/bake
 
 override_dh_auto_clean:
 	dh_auto_clean
-	rm Recipe.conf
+	rm -f Recipe.conf
