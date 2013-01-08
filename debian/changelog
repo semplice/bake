@@ -1,3 +1,10 @@
+bake (0.1.6-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Fix install location of Mallard files
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Wed, 09 Jan 2013 10:11:01 +1300
+
 bake (0.1.5-0ubuntu1) precise; urgency=low
 
   * New upstream release:
