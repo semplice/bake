@@ -1,3 +1,17 @@
+bake (0.1.7-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Make data variables match the same format as programs and libraries
+      variables
+    - Translate XDG .desktop files
+    - Add programs.*.vala-compile-flags
+    - Pretty print install rules
+    - Use cp instead of install so install rules have correct permissions
+    - Remove program type (too hard to be automagic)
+    - Fix running rules from other recipes when the output is in a subdirectory
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 09 Feb 2013 17:32:04 +1300
+
 bake (0.1.6-0ubuntu1) precise; urgency=low
 
   * New upstream release:
