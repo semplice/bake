@@ -1,3 +1,12 @@
+bake (0.1.8-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Translate GSettings schema files
+    - Add support for GTK+ UI files
+    - Support more compact variable notation
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 10 Feb 2013 20:14:48 +1300
+
 bake (0.1.7-0ubuntu1) precise; urgency=low
 
   * New upstream release:
