@@ -1,3 +1,10 @@
+bake (0.1.8-0ubuntu2) precise; urgency=low
+
+  * debian/control:
+    - Build-depend on pkg-config
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 10 Feb 2013 20:48:04 +1300
+
 bake (0.1.8-0ubuntu1) precise; urgency=low
 
   * New upstream release:

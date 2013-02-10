@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Robert Ancell <robert.ancell@gmail.com>
 Standards-Version: 3.9.3
 Build-Depends: debhelper (>= 7.0.50~),
+               pkg-config,
                valac-0.18
 Homepage: https://launchpad.net/bake
 
