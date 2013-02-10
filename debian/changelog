@@ -1,3 +1,10 @@
+bake (0.1.8-0ubuntu3) precise; urgency=low
+
+  * debian/control:
+    - Build-depend on libglib2.0-dev
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Mon, 11 Feb 2013 09:14:29 +1300
+
 bake (0.1.8-0ubuntu2) precise; urgency=low
 
   * debian/control:
