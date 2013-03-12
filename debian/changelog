@@ -1,3 +1,10 @@
+bake (0.1.9-0ubuntu2) precise; urgency=low
+
+  * debian/control:
+    - Build-depend on itstool
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Wed, 13 Mar 2013 10:00:23 +1300
+
 bake (0.1.9-0ubuntu1) precise; urgency=low
 
   * New upstream release:
