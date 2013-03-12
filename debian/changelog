@@ -1,3 +1,16 @@
+bake (0.1.9-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Translate Mallard documents
+    - Optimise release rules
+    - Put translation templates into translation directory
+    - Fix building relative targets
+    - Print warning when vala module can't find pkg-config file
+    - Fix translation install directory
+    - Make gettext translations uninstallable
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 12 Mar 2013 23:06:15 +1300
+
 bake (0.1.8-0ubuntu3) precise; urgency=low
 
   * debian/control:
