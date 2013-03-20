@@ -1,3 +1,15 @@
+bake (0.1.10-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Improve error message when unable to compile
+    - Check pkg-config versions of dependencies
+    - Show failing command when build stops
+    - Compile Vala C code with -Wno-deprecated-declarations to avoid warnings
+      about g_type_init
+    - Remove unecessary informational messages
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Wed, 20 Mar 2013 21:29:15 +1300
+
 bake (0.1.9-0ubuntu2) precise; urgency=low
 
   * debian/control:
