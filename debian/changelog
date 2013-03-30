@@ -1,3 +1,23 @@
+bake (0.1.13-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    [ 0.1.11 ]
+    * Add root-directory variable
+    * Install into /usr instead of /usr/local by default
+    * Automatically link against both gobject and glib for Vala programs
+    * Don't overload programs.*.packages for Vala packages - use
+      programs.*.vala-packages instead
+    * Improve fast vapi status command
+    * Updated documentation
+    [ 0.1.12 ]
+    * Fix man page not being installed/distributed
+    * Fix pkg-config parts of tests not being distributed
+    * Fix bake-template and bake-gettext not compiling
+    [ 0.1.13 ]
+    * Fix test programs not compiling with new syntax
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 30 Mar 2013 14:50:56 +1300
+
 bake (0.1.10-0ubuntu1) precise; urgency=low
 
   * New upstream release:
