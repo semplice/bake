@@ -1,3 +1,19 @@
+bake (0.1.15-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    [ 0.1.14 ]
+    - Rename package.* variables to project.* and fix documentation
+      inconsistency
+    - Fix Makefile not working with LIBRARY_DIRECTORY variable
+    - Remove obsolete package.files
+    - Implement programs.*.install-directory and libraries.*.install-directory
+    - Support XDG icons
+    [ 0.1.15 ]
+    - Don't install data when data.*.install is false
+    - Fix src/config-bootstrap.vala not being in tarball
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 02 Apr 2013 21:37:19 +1300
+
 bake (0.1.13-0ubuntu1) precise; urgency=low
 
   * New upstream release:
