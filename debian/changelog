@@ -1,3 +1,17 @@
+bake (0.1.17-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    [ 0.1.16 ]
+    - Add an uninstall target
+    - Always build templates, not just when something depends on them
+    - Build libraries in both static and dynamic form
+    [ 0.1.17 ]
+    - Allow newlines in *.*.vala-compile-flags, templates.*.variables
+    - Add libraries.*.vala-header-name and libraries.*.vala-vapi-name overrides
+    - Distribute missing .pc files required for tests
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 06 Apr 2013 12:38:40 +1300
+
 bake (0.1.15-0ubuntu1) precise; urgency=low
 
   * New upstream release:
