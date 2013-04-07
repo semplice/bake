@@ -1,3 +1,13 @@
+bake (0.1.18-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Remove pkg-config autogeneration - it is better to let the user do this
+    - Add project.minimum-bake-version so a project can specify what version of
+      Bake is required to build
+    - Rework test support - tests are now connected to programs
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 07 Apr 2013 20:23:39 +1200
+
 bake (0.1.17-0ubuntu1) precise; urgency=low
 
   * New upstream release:
