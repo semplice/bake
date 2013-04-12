@@ -1,3 +1,12 @@
+bake (0.1.19-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Fix relative sources not working for C and Vala programs/libraries
+    - Correctly compile shared sources in C and Vala programs/libraries
+    - Build in the order specified in the recipe
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Fri, 12 Apr 2013 22:26:35 +1200
+
 bake (0.1.18-0ubuntu1) precise; urgency=low
 
   * New upstream release:
