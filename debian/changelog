@@ -1,3 +1,13 @@
+bake (0.1.20-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Fix absolute paths not working as inputs
+    - Fix C dependency scanning not working
+    - Show command *before* output on command failure
+    - Add programs.*.debug and libraries.*.debug
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 20 Apr 2013 16:13:04 +1200
+
 bake (0.1.19-0ubuntu1) precise; urgency=low
 
   * New upstream release:
