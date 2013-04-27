@@ -1,3 +1,16 @@
+bake (0.1.21-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Use build directory to generate releases
+    - Use programs.*.libraries and libraries.*.libraries to specify libraries
+      (local or system) to link against.
+    - Stop automatically versioning libraries
+    - Add more GIR variables
+    - Add --color option to control color output
+    - Improve error messages when failed to build
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 23 Apr 2013 22:32:06 +1200
+
 bake (0.1.20-0ubuntu1) precise; urgency=low
 
   * New upstream release:
