@@ -1,3 +1,12 @@
+bake (0.1.22-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Support static linking against locally built libraries
+    - Fail build if an output is defined in multiple rules
+    - Detect build loops
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 27 Apr 2013 20:36:43 +1200
+
 bake (0.1.21-0ubuntu1) precise; urgency=low
 
   * New upstream release:
