@@ -1,3 +1,12 @@
+bake (0.1.24-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Read from subprocesses asynchronously so pipe doesn't fill up for
+      processes with a lot of output
+    - Use .vapi file when linking Vala programs against local libraries
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 04 May 2013 13:22:06 -0700
+
 bake (0.1.23-0ubuntu1) precise; urgency=low
 
   * New upstream release:
