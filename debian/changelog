@@ -1,3 +1,13 @@
+bake (0.1.23-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Don't try and compile C/C++ header files
+    - Fix documentation to state only project.name is required
+    - Fix shared library name passed to g-ir-compiler
+    - Fix typelib name generated for Vala libraries
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 04 May 2013 11:37:24 -0700
+
 bake (0.1.22-0ubuntu1) precise; urgency=low
 
   * New upstream release:
