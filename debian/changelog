@@ -1,3 +1,17 @@
+bake (0.1.25-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Handle pkg-config files that use variable substitutions
+    - Documentation improvements
+    - Pretty print C# output
+    - Support arbitrary compile flags in C# programs
+    - Don't run C# programs through a script
+    - Support linking against C# libraries
+    - Allow multi-line compile-flags and link-flags variables
+    - Support C# resources   
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 05 May 2013 16:17:54 -0700
+
 bake (0.1.24-0ubuntu1) precise; urgency=low
 
   * New upstream release:
