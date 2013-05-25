@@ -1,3 +1,10 @@
+bake (0.1.27-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Support project options
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 25 May 2013 20:31:01 +1200
+
 bake (0.1.26-0ubuntu1) precise; urgency=low
 
   * New upstream release:
