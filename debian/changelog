@@ -1,3 +1,10 @@
+bake (0.1.29-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Fix library-directory override broken in 0.1.29
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Mon, 27 May 2013 20:35:44 +1200
+
 bake (0.1.28-0ubuntu1) precise; urgency=low
 
   * New upstream release:
