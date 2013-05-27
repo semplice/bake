@@ -1,3 +1,10 @@
+bake (0.1.28-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Support parallel builds
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Mon, 27 May 2013 20:32:30 +1200
+
 bake (0.1.27-0ubuntu1) precise; urgency=low
 
   * New upstream release:
