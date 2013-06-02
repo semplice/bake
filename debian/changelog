@@ -1,3 +1,14 @@
+bake (0.1.30-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Fix regression where requested target was always built in the toplevel
+    - Ignore all warnings in Vala generated C code
+    - Fix spacing between outputs in --expand
+    - Regression test bake-gettext and improve scanning
+    - Regression test bake-template
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 02 Jun 2013 22:04:01 +1200
+
 bake (0.1.29-0ubuntu1) precise; urgency=low
 
   * New upstream release:
