@@ -1,3 +1,15 @@
+bake (0.1.33-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Add basic support for clang
+    - Make able to explicitly choose compiler with programs.*.compiler or
+      libraries.*.compiler
+    - Add bake --list-targets
+    - Support re-using the same name for Vala sources
+    - Support appdata
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 07 Sep 2013 20:48:29 +1200
+
 bake (0.1.32-0ubuntu1) precise; urgency=low
 
   * New upstream release:
