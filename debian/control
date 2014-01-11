@@ -14,5 +14,27 @@ Package: bake
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends}
-Description: Bake
+Description: Build system
  Bake is an easy to use build system.
+ .
+ This package contains a command line tool for using Bake.
+
+Package: libbake0
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: Build system library
+ Bake is an easy to use build system.
+ .
+ This package contains a library to build Bake projects.
+
+Package: libbake-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends},
+         libbake0 (= ${binary:Version})
+Description: Build system library (development files)
+ Bake is an easy to use build system.
+ .
+ This package contains header files and development information, which
+ is useful for building tools that use Bake.
