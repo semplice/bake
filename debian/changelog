@@ -1,3 +1,11 @@
+bake (0.1.36-0ubuntu1) precise; urgency=medium
+
+  * New upstream release:
+    - Add support for pkg-config files
+    - Make a pkg-config file for libbake
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 12 Jan 2014 21:06:22 +1300
+
 bake (0.1.35-0ubuntu1) precise; urgency=medium
 
   * New upstream release:

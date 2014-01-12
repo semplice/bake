@@ -5,8 +5,6 @@ libbake.so.0 libbake0 #MINVER#
  bake_block_get_type@Base 0.1.35
  bake_block_get_variable@Base 0.1.35
  bake_block_new@Base 0.1.35
- bake_block_ref@Base 0.1.35
- bake_block_unref@Base 0.1.35
  bake_build_error_quark@Base 0.1.35
  bake_build_module_can_generate_library_rules@Base 0.1.35
  bake_build_module_can_generate_program_rules@Base 0.1.35
@@ -116,7 +114,6 @@ libbake.so.0 libbake0 #MINVER#
  bake_option_get_value@Base 0.1.35
  bake_option_new@Base 0.1.35
  bake_option_set_value@Base 0.1.35
- bake_param_spec_block@Base 0.1.35
  bake_param_spec_variable_block@Base 0.1.35
  bake_pkg_compare_version@Base 0.1.35
  bake_pkg_config_file_construct_from_id@Base 0.1.35
@@ -137,6 +134,9 @@ libbake.so.0 libbake0 #MINVER#
  bake_pkg_config_file_new_from_id@Base 0.1.35
  bake_pkg_config_file_new_local@Base 0.1.35
  bake_pkg_config_file_substitute_variables@Base 0.1.35
+ bake_pkg_config_module_construct@Base 0.1.36
+ bake_pkg_config_module_get_type@Base 0.1.36
+ bake_pkg_config_module_new@Base 0.1.36
  bake_pot_rule_construct@Base 0.1.35
  bake_pot_rule_get_type@Base 0.1.35
  bake_pot_rule_new@Base 0.1.35
@@ -233,11 +233,8 @@ libbake.so.0 libbake0 #MINVER#
  bake_vala_module_construct@Base 0.1.35
  bake_vala_module_get_type@Base 0.1.35
  bake_vala_module_new@Base 0.1.35
- bake_value_get_block@Base 0.1.35
  bake_value_get_variable_block@Base 0.1.35
- bake_value_set_block@Base 0.1.35
  bake_value_set_variable_block@Base 0.1.35
- bake_value_take_block@Base 0.1.35
  bake_value_take_variable_block@Base 0.1.35
  bake_variable_block_construct@Base 0.1.35
  bake_variable_block_get_type@Base 0.1.35
