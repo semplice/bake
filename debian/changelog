@@ -1,3 +1,10 @@
+bake (0.1.37-0ubuntu1) precise; urgency=medium
+
+  * New upstream release:
+    - Add libraries.*.symbol-filter to set which symbols are exported
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 21 Jan 2014 21:20:14 +1300
+
 bake (0.1.36-0ubuntu1) precise; urgency=medium
 
   * New upstream release:
