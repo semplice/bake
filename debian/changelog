@@ -1,3 +1,10 @@
+bake (0.1.42-0ubuntu1) precise; urgency=medium
+
+  * New upstream release:
+    - Compile bake-get-symbols for bootstrap
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 28 Jan 2014 11:16:09 +1300
+
 bake (0.1.41-0ubuntu1) precise; urgency=medium
 
   * New upstream release:
