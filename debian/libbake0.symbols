@@ -60,93 +60,6 @@ libbake.so.0 libbake0 #MINVER#
  bake_library_get_install_directory@Base 0.1.35
  bake_library_get_type@Base 0.1.35
  bake_library_new@Base 0.1.35
- bake_modules_bzip_module_construct@Base 0.1.39
- bake_modules_bzip_module_get_type@Base 0.1.39
- bake_modules_bzip_module_new@Base 0.1.39
- bake_modules_bzr_module_construct@Base 0.1.39
- bake_modules_bzr_module_get_type@Base 0.1.39
- bake_modules_bzr_module_new@Base 0.1.39
- bake_modules_clang_module_construct@Base 0.1.39
- bake_modules_clang_module_get_type@Base 0.1.39
- bake_modules_clang_module_new@Base 0.1.39
- bake_modules_data_module_construct@Base 0.1.39
- bake_modules_data_module_get_type@Base 0.1.39
- bake_modules_data_module_new@Base 0.1.39
- bake_modules_dpkg_module_construct@Base 0.1.39
- bake_modules_dpkg_module_get_type@Base 0.1.39
- bake_modules_dpkg_module_new@Base 0.1.39
- bake_modules_gcc_module_construct@Base 0.1.39
- bake_modules_gcc_module_get_type@Base 0.1.39
- bake_modules_gcc_module_new@Base 0.1.39
- bake_modules_gettext_module_add_translatable_file@Base 0.1.39
- bake_modules_gettext_module_construct@Base 0.1.39
- bake_modules_gettext_module_get_languages@Base 0.1.39
- bake_modules_gettext_module_get_type@Base 0.1.39
- bake_modules_gettext_module_new@Base 0.1.39
- bake_modules_ghc_module_construct@Base 0.1.39
- bake_modules_ghc_module_get_type@Base 0.1.39
- bake_modules_ghc_module_new@Base 0.1.39
- bake_modules_git_module_construct@Base 0.1.39
- bake_modules_git_module_get_type@Base 0.1.39
- bake_modules_git_module_new@Base 0.1.39
- bake_modules_gnome_module_construct@Base 0.1.39
- bake_modules_gnome_module_get_type@Base 0.1.39
- bake_modules_gnome_module_new@Base 0.1.39
- bake_modules_gsettings_module_construct@Base 0.1.39
- bake_modules_gsettings_module_get_type@Base 0.1.39
- bake_modules_gsettings_module_new@Base 0.1.39
- bake_modules_gtk_module_construct@Base 0.1.39
- bake_modules_gtk_module_get_type@Base 0.1.39
- bake_modules_gtk_module_new@Base 0.1.39
- bake_modules_gzip_module_construct@Base 0.1.39
- bake_modules_gzip_module_get_type@Base 0.1.39
- bake_modules_gzip_module_new@Base 0.1.39
- bake_modules_java_module_construct@Base 0.1.39
- bake_modules_java_module_get_type@Base 0.1.39
- bake_modules_java_module_new@Base 0.1.39
- bake_modules_launchpad_module_construct@Base 0.1.39
- bake_modules_launchpad_module_get_type@Base 0.1.39
- bake_modules_launchpad_module_new@Base 0.1.39
- bake_modules_mallard_module_construct@Base 0.1.39
- bake_modules_mallard_module_get_type@Base 0.1.39
- bake_modules_mallard_module_new@Base 0.1.39
- bake_modules_man_module_construct@Base 0.1.39
- bake_modules_man_module_get_type@Base 0.1.39
- bake_modules_man_module_new@Base 0.1.39
- bake_modules_mono_module_construct@Base 0.1.39
- bake_modules_mono_module_get_type@Base 0.1.39
- bake_modules_mono_module_new@Base 0.1.39
- bake_modules_pkg_config_module_construct@Base 0.1.39
- bake_modules_pkg_config_module_get_type@Base 0.1.39
- bake_modules_pkg_config_module_new@Base 0.1.39
- bake_modules_pot_rule_construct@Base 0.1.39
- bake_modules_pot_rule_get_type@Base 0.1.39
- bake_modules_pot_rule_new@Base 0.1.39
- bake_modules_python_module_construct@Base 0.1.39
- bake_modules_python_module_get_type@Base 0.1.39
- bake_modules_python_module_new@Base 0.1.39
- bake_modules_release_module_construct@Base 0.1.39
- bake_modules_release_module_get_type@Base 0.1.39
- bake_modules_release_module_new@Base 0.1.39
- bake_modules_release_rule_add_release_file@Base 0.1.39
- bake_modules_release_rule_construct@Base 0.1.39
- bake_modules_release_rule_get_type@Base 0.1.39
- bake_modules_release_rule_new@Base 0.1.39
- bake_modules_rpm_module_construct@Base 0.1.39
- bake_modules_rpm_module_get_type@Base 0.1.39
- bake_modules_rpm_module_new@Base 0.1.39
- bake_modules_script_module_construct@Base 0.1.39
- bake_modules_script_module_get_type@Base 0.1.39
- bake_modules_script_module_new@Base 0.1.39
- bake_modules_vala_module_construct@Base 0.1.39
- bake_modules_vala_module_get_type@Base 0.1.39
- bake_modules_vala_module_new@Base 0.1.39
- bake_modules_xdg_module_construct@Base 0.1.39
- bake_modules_xdg_module_get_type@Base 0.1.39
- bake_modules_xdg_module_new@Base 0.1.39
- bake_modules_xzip_module_construct@Base 0.1.39
- bake_modules_xzip_module_get_type@Base 0.1.39
- bake_modules_xzip_module_new@Base 0.1.39
  bake_option_construct@Base 0.1.35
  bake_option_get_default@Base 0.1.35
  bake_option_get_description@Base 0.1.35
@@ -155,25 +68,6 @@ libbake.so.0 libbake0 #MINVER#
  bake_option_new@Base 0.1.35
  bake_option_set_value@Base 0.1.35
  bake_param_spec_variable_block@Base 0.1.35
- bake_pkg_compare_version@Base 0.1.35
- bake_pkg_config_file_construct_from_id@Base 0.1.35
- bake_pkg_config_file_construct_local@Base 0.1.35
- bake_pkg_config_file_expand@Base 0.1.35
- bake_pkg_config_file_generate_flags@Base 0.1.35
- bake_pkg_config_file_get_cflags@Base 0.1.35
- bake_pkg_config_file_get_conflicts@Base 0.1.35
- bake_pkg_config_file_get_description@Base 0.1.35
- bake_pkg_config_file_get_libs@Base 0.1.35
- bake_pkg_config_file_get_libs_private@Base 0.1.35
- bake_pkg_config_file_get_name@Base 0.1.35
- bake_pkg_config_file_get_requires@Base 0.1.35
- bake_pkg_config_file_get_type@Base 0.1.35
- bake_pkg_config_file_get_url@Base 0.1.35
- bake_pkg_config_file_get_variable@Base 0.1.35
- bake_pkg_config_file_get_version@Base 0.1.35
- bake_pkg_config_file_new_from_id@Base 0.1.35
- bake_pkg_config_file_new_local@Base 0.1.35
- bake_pkg_config_file_substitute_variables@Base 0.1.35
  bake_program_construct@Base 0.1.35
  bake_program_get_install_directory@Base 0.1.35
  bake_program_get_type@Base 0.1.35
@@ -218,10 +112,6 @@ libbake.so.0 libbake0 #MINVER#
  bake_recipe_to_string@Base 0.1.35
  bake_remove_extension@Base 0.1.35
  bake_replace_extension@Base 0.1.35
- bake_require_entry_check_version@Base 0.1.35
- bake_require_entry_construct@Base 0.1.35
- bake_require_entry_get_type@Base 0.1.35
- bake_require_entry_new@Base 0.1.35
  bake_rule_add_command@Base 0.1.35
  bake_rule_add_error_command@Base 0.1.35
  bake_rule_add_input@Base 0.1.35
@@ -239,7 +129,6 @@ libbake.so.0 libbake0 #MINVER#
  bake_rule_make_status_command@Base 0.1.35
  bake_rule_new@Base 0.1.35
  bake_rule_to_string@Base 0.1.35
- bake_split_variable@Base 0.1.35
  bake_tagged_entry_construct@Base 0.1.35
  bake_tagged_entry_get_is_allowed@Base 0.1.35
  bake_tagged_entry_get_type@Base 0.1.35
