@@ -17,11 +17,24 @@ libbake.so.0 libbake0 #MINVER#
  bake_build_module_new@Base 0.1.35
  bake_build_module_recipe_complete@Base 0.1.35
  bake_build_module_rules_complete@Base 0.1.35
+ bake_builder_build@Base 0.1.47
+ bake_builder_build_finish@Base 0.1.47
  bake_builder_build_target@Base 0.1.35
  bake_builder_build_target_finish@Base 0.1.35
+ bake_builder_clean@Base 0.1.47
+ bake_builder_clean_finish@Base 0.1.47
  bake_builder_construct@Base 0.1.35
+ bake_builder_flags_get_type@Base 0.1.47
  bake_builder_get_type@Base 0.1.35
+ bake_builder_install@Base 0.1.47
+ bake_builder_install_finish@Base 0.1.47
  bake_builder_new@Base 0.1.35
+ bake_builder_release@Base 0.1.47
+ bake_builder_release_finish@Base 0.1.47
+ bake_builder_test@Base 0.1.47
+ bake_builder_test_finish@Base 0.1.47
+ bake_builder_uninstall@Base 0.1.47
+ bake_builder_uninstall_finish@Base 0.1.47
  bake_clean_rule_add_clean_file@Base 0.1.35
  bake_clean_rule_construct@Base 0.1.35
  bake_clean_rule_get_type@Base 0.1.35
@@ -67,6 +80,7 @@ libbake.so.0 libbake0 #MINVER#
  bake_option_get_value@Base 0.1.35
  bake_option_new@Base 0.1.35
  bake_option_set_value@Base 0.1.35
+ bake_param_spec_variable@Base 0.1.47
  bake_param_spec_variable_block@Base 0.1.35
  bake_program_construct@Base 0.1.35
  bake_program_get_install_directory@Base 0.1.35
@@ -105,6 +119,7 @@ libbake.so.0 libbake0 #MINVER#
  bake_recipe_get_type@Base 0.1.35
  bake_recipe_get_variable@Base 0.1.35
  bake_recipe_get_variable_children@Base 0.1.35
+ bake_recipe_load_flags_get_type@Base 0.1.47
  bake_recipe_new@Base 0.1.35
  bake_recipe_new_from_file@Base 0.1.35
  bake_recipe_set_variable@Base 0.1.35
@@ -138,11 +153,19 @@ libbake.so.0 libbake0 #MINVER#
  bake_template_construct@Base 0.1.35
  bake_template_get_type@Base 0.1.35
  bake_template_new@Base 0.1.35
+ bake_value_get_variable@Base 0.1.47
  bake_value_get_variable_block@Base 0.1.35
+ bake_value_set_variable@Base 0.1.47
  bake_value_set_variable_block@Base 0.1.35
+ bake_value_take_variable@Base 0.1.47
  bake_value_take_variable_block@Base 0.1.35
  bake_variable_block_construct@Base 0.1.35
  bake_variable_block_get_type@Base 0.1.35
  bake_variable_block_new@Base 0.1.35
  bake_variable_block_ref@Base 0.1.35
  bake_variable_block_unref@Base 0.1.35
+ bake_variable_construct@Base 0.1.47
+ bake_variable_get_type@Base 0.1.47
+ bake_variable_new@Base 0.1.47
+ bake_variable_ref@Base 0.1.47
+ bake_variable_unref@Base 0.1.47
