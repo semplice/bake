@@ -1,7 +1,8 @@
 Source: bake
 Section: devel
 Priority: optional
-Maintainer: Robert Ancell <robert.ancell@gmail.com>
+Maintainer: Eugenio "g7" Paolantonio <me@medesimo.eu>
+XSBC-Original-Maintainer: Robert Ancell <robert.ancell@gmail.com>
 Standards-Version: 3.9.3
 Build-Depends: debhelper (>= 7.0.50~),
                itstool,
