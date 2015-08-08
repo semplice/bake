@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 7.0.50~),
                itstool,
                libglib2.0-dev,
                pkg-config,
-               valac-0.18
+               valac-0.28
 Homepage: https://launchpad.net/bake
 
 Package: bake
