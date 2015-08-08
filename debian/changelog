@@ -1,0 +1,543 @@
+bake (0.1.49-0ubuntu1) precise; urgency=medium
+
+  * New upstream release:
+    - Support valac < 0.20 which doesn't have --api-version
+    - Don't look for a .pc file for the posix Vala package
+    - Make it clear in error messages when we haven't found Vala packages, not
+      pkg-config packages
+    - Remove unnecessary packages fields from the Bake recipes
+    - Add resources file as dependency of valac rules
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Thu, 24 Jul 2014 20:49:33 +1200
+
+bake (0.1.48-0ubuntu1) precise; urgency=medium
+
+  * New upstream release:
+    - Automatically work out packages required by vala-packages
+    - Add vala-api-version option
+    - Add GLib resources help
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 22 Jul 2014 12:02:40 +1200
+
+bake (0.1.47-0ubuntu1) precise; urgency=medium
+
+  * New upstream release:
+    - Support GLib resources
+  * debian/libbake0.symbols:
+    - Updated
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Wed, 16 Jul 2014 21:59:45 +1200
+
+bake (0.1.46-0ubuntu1) precise; urgency=medium
+
+  * New upstream release:
+    [ 0.1.45 ]
+    - Fix configure stage being run on subsequent builds
+    - Fix options defaulting to empty string when in form:
+      options.name
+      {
+        default = blah
+      }
+    - Treat variable redefinition as an error
+    - Treat empty blocks as an error
+    - Show recipe name when child recipes fail to parse
+    - Support compiling multiple targets from the command line,
+      e.g. "bake test release"
+    - Fix missing newlines from debugging output
+    - Add tests/documentation for Objective C, Fortran
+    - Stop reading child recipies as soon as we know they're not toplevel files
+    [ 0.1.46 ]
+    - Add missing test files
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 29 Jun 2014 21:23:50 +1200
+
+bake (0.1.44-0ubuntu1) precise; urgency=medium
+
+  * New upstream release:
+    [ 0.1.43 ]
+    - libbake API tidy-ups
+    [ 0.1.44 ]
+    - Distribute src/config-bootstrap.vala.in
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Wed, 07 May 2014 22:36:54 +1200
+
+bake (0.1.42-0ubuntu1) precise; urgency=medium
+
+  * New upstream release:
+    - Compile bake-get-symbols for bootstrap
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 28 Jan 2014 11:16:09 +1300
+
+bake (0.1.41-0ubuntu1) precise; urgency=medium
+
+  * New upstream release:
+    - Fix error text broken in 0.1.34
+    - Fix ordering of pkg-config flags
+    - Hide private symbols in libbake
+  * debian/libbake0.symbols:
+    - Private symbols removed
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Mon, 27 Jan 2014 21:18:32 +1300
+
+bake (0.1.39-0ubuntu1) precise; urgency=medium
+
+  * New upstream release:
+    - Fix symbol filter
+    - Pretty print symbol commands
+    - Factor all Bake logic into a Cookbook class
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Thu, 23 Jan 2014 21:26:08 +1300
+
+bake (0.1.37-0ubuntu1) precise; urgency=medium
+
+  * New upstream release:
+    - Add libraries.*.symbol-filter to set which symbols are exported
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 21 Jan 2014 21:20:14 +1300
+
+bake (0.1.36-0ubuntu1) precise; urgency=medium
+
+  * New upstream release:
+    - Add support for pkg-config files
+    - Make a pkg-config file for libbake
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 12 Jan 2014 21:06:22 +1300
+
+bake (0.1.35-0ubuntu1) precise; urgency=medium
+
+  * New upstream release:
+    [ 0.1.34 ]
+    - Split out libbake so other apps can access bake information
+    - Add support for D programs
+    [ 0.1.35 ]
+    - Set library path when running tests
+    - Set soname when linking libraries
+    - Fix install of library links
+    - Make libbake objects extend GLib.Object
+    - Namespace libbake
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 12 Jan 2014 09:39:44 +1300
+
+bake (0.1.33-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Add basic support for clang
+    - Make able to explicitly choose compiler with programs.*.compiler or
+      libraries.*.compiler
+    - Add bake --list-targets
+    - Support re-using the same name for Vala sources
+    - Support appdata
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 07 Sep 2013 20:48:29 +1200
+
+bake (0.1.32-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Add missing test files
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 03 Sep 2013 09:38:51 +1200
+
+bake (0.1.31-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Support C source in Vala programs / libraries
+    - Support conditionals
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Mon, 02 Sep 2013 21:50:18 +1200
+
+bake (0.1.30-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Fix regression where requested target was always built in the toplevel
+    - Ignore all warnings in Vala generated C code
+    - Fix spacing between outputs in --expand
+    - Regression test bake-gettext and improve scanning
+    - Regression test bake-template
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 02 Jun 2013 22:04:01 +1200
+
+bake (0.1.29-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Fix library-directory override broken in 0.1.29
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Mon, 27 May 2013 20:35:44 +1200
+
+bake (0.1.28-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Support parallel builds
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Mon, 27 May 2013 20:32:30 +1200
+
+bake (0.1.27-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Support project options
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 25 May 2013 20:31:01 +1200
+
+bake (0.1.26-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Pretty print Java output
+    - Fix Java jar creation
+    - Support setting entrypoint and manifest for Java programs
+    - Support Java resources
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Mon, 06 May 2013 16:53:17 +1200
+
+bake (0.1.25-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Handle pkg-config files that use variable substitutions
+    - Documentation improvements
+    - Pretty print C# output
+    - Support arbitrary compile flags in C# programs
+    - Don't run C# programs through a script
+    - Support linking against C# libraries
+    - Allow multi-line compile-flags and link-flags variables
+    - Support C# resources   
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 05 May 2013 16:17:54 -0700
+
+bake (0.1.24-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Read from subprocesses asynchronously so pipe doesn't fill up for
+      processes with a lot of output
+    - Use .vapi file when linking Vala programs against local libraries
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 04 May 2013 13:22:06 -0700
+
+bake (0.1.23-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Don't try and compile C/C++ header files
+    - Fix documentation to state only project.name is required
+    - Fix shared library name passed to g-ir-compiler
+    - Fix typelib name generated for Vala libraries
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 04 May 2013 11:37:24 -0700
+
+bake (0.1.22-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Support static linking against locally built libraries
+    - Fail build if an output is defined in multiple rules
+    - Detect build loops
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 27 Apr 2013 20:36:43 +1200
+
+bake (0.1.21-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Use build directory to generate releases
+    - Use programs.*.libraries and libraries.*.libraries to specify libraries
+      (local or system) to link against.
+    - Stop automatically versioning libraries
+    - Add more GIR variables
+    - Add --color option to control color output
+    - Improve error messages when failed to build
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 23 Apr 2013 22:32:06 +1200
+
+bake (0.1.20-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Fix absolute paths not working as inputs
+    - Fix C dependency scanning not working
+    - Show command *before* output on command failure
+    - Add programs.*.debug and libraries.*.debug
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 20 Apr 2013 16:13:04 +1200
+
+bake (0.1.19-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Fix relative sources not working for C and Vala programs/libraries
+    - Correctly compile shared sources in C and Vala programs/libraries
+    - Build in the order specified in the recipe
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Fri, 12 Apr 2013 22:26:35 +1200
+
+bake (0.1.18-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Remove pkg-config autogeneration - it is better to let the user do this
+    - Add project.minimum-bake-version so a project can specify what version of
+      Bake is required to build
+    - Rework test support - tests are now connected to programs
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 07 Apr 2013 20:23:39 +1200
+
+bake (0.1.17-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    [ 0.1.16 ]
+    - Add an uninstall target
+    - Always build templates, not just when something depends on them
+    - Build libraries in both static and dynamic form
+    [ 0.1.17 ]
+    - Allow newlines in *.*.vala-compile-flags, templates.*.variables
+    - Add libraries.*.vala-header-name and libraries.*.vala-vapi-name overrides
+    - Distribute missing .pc files required for tests
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 06 Apr 2013 12:38:40 +1300
+
+bake (0.1.15-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    [ 0.1.14 ]
+    - Rename package.* variables to project.* and fix documentation
+      inconsistency
+    - Fix Makefile not working with LIBRARY_DIRECTORY variable
+    - Remove obsolete package.files
+    - Implement programs.*.install-directory and libraries.*.install-directory
+    - Support XDG icons
+    [ 0.1.15 ]
+    - Don't install data when data.*.install is false
+    - Fix src/config-bootstrap.vala not being in tarball
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 02 Apr 2013 21:37:19 +1300
+
+bake (0.1.13-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    [ 0.1.11 ]
+    * Add root-directory variable
+    * Install into /usr instead of /usr/local by default
+    * Automatically link against both gobject and glib for Vala programs
+    * Don't overload programs.*.packages for Vala packages - use
+      programs.*.vala-packages instead
+    * Improve fast vapi status command
+    * Updated documentation
+    [ 0.1.12 ]
+    * Fix man page not being installed/distributed
+    * Fix pkg-config parts of tests not being distributed
+    * Fix bake-template and bake-gettext not compiling
+    [ 0.1.13 ]
+    * Fix test programs not compiling with new syntax
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 30 Mar 2013 14:50:56 +1300
+
+bake (0.1.10-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Improve error message when unable to compile
+    - Check pkg-config versions of dependencies
+    - Show failing command when build stops
+    - Compile Vala C code with -Wno-deprecated-declarations to avoid warnings
+      about g_type_init
+    - Remove unecessary informational messages
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Wed, 20 Mar 2013 21:29:15 +1300
+
+bake (0.1.9-0ubuntu2) precise; urgency=low
+
+  * debian/control:
+    - Build-depend on itstool
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Wed, 13 Mar 2013 10:00:23 +1300
+
+bake (0.1.9-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Translate Mallard documents
+    - Optimise release rules
+    - Put translation templates into translation directory
+    - Fix building relative targets
+    - Print warning when vala module can't find pkg-config file
+    - Fix translation install directory
+    - Make gettext translations uninstallable
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 12 Mar 2013 23:06:15 +1300
+
+bake (0.1.8-0ubuntu3) precise; urgency=low
+
+  * debian/control:
+    - Build-depend on libglib2.0-dev
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Mon, 11 Feb 2013 09:14:29 +1300
+
+bake (0.1.8-0ubuntu2) precise; urgency=low
+
+  * debian/control:
+    - Build-depend on pkg-config
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 10 Feb 2013 20:48:04 +1300
+
+bake (0.1.8-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Translate GSettings schema files
+    - Add support for GTK+ UI files
+    - Support more compact variable notation
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 10 Feb 2013 20:14:48 +1300
+
+bake (0.1.7-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Make data variables match the same format as programs and libraries
+      variables
+    - Translate XDG .desktop files
+    - Add programs.*.vala-compile-flags
+    - Pretty print install rules
+    - Use cp instead of install so install rules have correct permissions
+    - Remove program type (too hard to be automagic)
+    - Fix running rules from other recipes when the output is in a subdirectory
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 09 Feb 2013 17:32:04 +1300
+
+bake (0.1.6-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Fix install location of Mallard files
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Wed, 09 Jan 2013 10:11:01 +1300
+
+bake (0.1.5-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Add support for scripts
+    - Add support for Qt
+    - Add *.*.install support for all modules
+    - Document templating system
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Thu, 27 Dec 2012 16:52:22 +1300
+
+bake (0.1.4-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Fix make clean not removing bake-template
+    - Fix config-bootstrap not being distributed
+    - Don't build bake-bootstrap on make clean
+    - Set pkg-config path correctly to use library-directory variable
+    - Add programs.*.install and libraries.*.install boolean value
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Wed, 21 Nov 2012 20:42:06 +1300
+
+bake (0.1.3-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Add a templating system
+    - Remove the defines from programs and libraries - it's hard to use and
+      better replaced with a file subsituter
+    - Replace use of pkg-config with built-in version
+  * debian/rules:
+    - Build with multi-arch
+  * debian/watch:
+    - Add watch file
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Wed, 21 Nov 2012 20:20:12 +1300
+
+bake (0.1.2-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+    - Fix 'newer' test failing on filesystems without sub-second timestamps
+    - Always rebuild rule when inputs change instead of relying on timestamps
+  * debian/control:
+    - Require valac 0.18
+    - Set section to the correct value - devel
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 03 Nov 2012 19:34:21 +1300
+
+bake (0.1.1-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+    - Distribute test data files
+  * debian/control:
+    - Use standards version 3.9.3
+  * debian/rules:
+    - Remove LDFLAGS override
+    - Remove debugging cat
+    - Fix clean not working with source version 3.0
+  * debian/source/format:
+    - Use source version 3.0
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Mon, 15 Oct 2012 13:01:49 +1300
+
+bake (0.1.0-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Install mallard files into /usr/share/help
+    - Build Vala libraries
+    - Fix searching for current Recipe in similarly named directories
+    - Link against locally generated Vala libraries
+    - Fix --debug output not being printed
+    - Improve error message on failed build
+    - Support Python libraries
+    - Install .py files if .install-sources=true
+    - Install package data with data.-.files
+    - Recipes now inherit variables from their parent
+    - Rename intltool rules to gettext
+    - Add an easy way to define variables to be passed to programs/libraries
+    - Automatically generate .desktop files for desktop applications
+    - Add C library GIR support
+  * debian/control:
+    - Build-depend on valac-0.16
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Fri, 07 Sep 2012 21:33:53 +1200
+
+bake (0.0.6-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Add Launchpad support
+    - Fix install rule for Vala programs
+    - Allow install-directory to be relative
+    - Add bzr-tag, git tag targets 
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 27 Nov 2011 22:20:12 +1100
+
+bake (0.0.5-0ubuntu1) precise; urgency=low
+
+  * New upstream release:
+    - Add package.files variable that adds arbitrary files
+    - Allow rules without any commands
+    - Allow indent to differ between rules
+    - Add a --unconfigure option
+    - Add pretty output for valac
+    - Allow custom build, install and clean rules
+    - Fix rules in subdirectories always being run
+    - Only log directory changes if something occurs
+    - Add variable substitution
+    - Add library support
+    - Add support for .bzrignore, .gitignore
+    - Use fastvapi to speed up Vala builds
+    - Fix rules not running when inputs are modified
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sun, 27 Nov 2011 21:18:09 +1100
+
+easy-build (0.0.3-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release:
+    - Add mono (C#) support
+    - Detect header file dependencies for C/C++ programs
+    - Build .pot and .mo files
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Thu, 29 Sep 2011 15:55:23 +1000
+
+easy-build (0.0.2-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release:
+    - Improve build messages
+    - Replace "eb expand" with "eb --expand"
+    - Allow unversioned packages
+    - Add intltool rules
+    - Add man rules
+    - Add gsettings rules
+    - Add desktop rules
+    - Add dpkg rules
+    - Add PPA rules
+    - Add RPM rules
+    - Add --verbose option
+    - Split into modules  
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Sat, 24 Sep 2011 10:31:48 +1000
+
+easy-build (0.0.1-0ubuntu1) oneiric; urgency=low
+
+  * Initial release
+
+ -- Robert Ancell <robert.ancell@gmail.com>  Sat, 17 Sep 2011 17:20:54 +1000

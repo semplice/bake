@@ -1,0 +1,4 @@
+usr/include
+usr/share/vala/vapi
+usr/lib/*/pkgconfig
+usr/lib/*/libbake.so
