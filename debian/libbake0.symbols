@@ -118,7 +118,6 @@ libbake.so.0 libbake0 #MINVER#
  bake_recipe_get_toplevel@Base 0.1.35
  bake_recipe_get_type@Base 0.1.35
  bake_recipe_get_variable@Base 0.1.35
- bake_recipe_get_variable_children@Base 0.1.35
  bake_recipe_load_flags_get_type@Base 0.1.47
  bake_recipe_new@Base 0.1.35
  bake_recipe_new_from_file@Base 0.1.35
@@ -153,6 +152,9 @@ libbake.so.0 libbake0 #MINVER#
  bake_template_construct@Base 0.1.35
  bake_template_get_type@Base 0.1.35
  bake_template_new@Base 0.1.35
+ bake_test_construct@Base 0.1.49+bzr
+ bake_test_get_type@Base 0.1.49+bzr
+ bake_test_new@Base 0.1.49+bzr
  bake_value_get_variable@Base 0.1.47
  bake_value_get_variable_block@Base 0.1.35
  bake_value_set_variable@Base 0.1.47
