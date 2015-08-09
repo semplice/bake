@@ -1,3 +1,9 @@
+bake (0.1.49+git20140824-3) changes-devel-unstable; urgency=medium
+
+  * [packaging] Added git:fix_tests patch.
+
+ -- Eugenio Paolantonio (g7) <me@medesimo.eu>  Sun, 09 Aug 2015 22:33:03 +0200
+
 bake (0.1.49+git20140824-2) changes-devel-unstable; urgency=medium
 
   * [packaging] Compile with the newest vala.
