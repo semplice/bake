@@ -107,15 +107,11 @@ class PythonModule : BuildModule
             if (install_directory == null)
             {
                 var install_dir = python_bin;
-                if (python_version == null)
+                if (python_version != null)
                 {
-                    var version = get_version (python_bin);
-                    if (version != null)
-                    {
-                        var tokens = version.split (".");
-                        if (tokens.length > 2)
-                            install_dir = "python%s.%s".printf (tokens[0], tokens[1]);
-                    }
+                    var tokens = python_version.split (".");
+                    if (tokens.length >= 2)
+                        install_dir = "python%s.%s".printf (tokens[0], tokens[1]);
                 }
                 install_directory = Path.build_filename (recipe.library_directory, install_dir, "site-packages", compilable.id);
             }
