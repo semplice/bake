@@ -166,7 +166,7 @@ class PythonModule : BuildModule
         string version_string;
         try
         {
-            Process.spawn_command_line_sync ("%s --version".printf (python_bin), null, out version_string, out exit_status);
+            Process.spawn_command_line_sync ("%s --version".printf (python_bin), out version_string, null, out exit_status);
         }
         catch (SpawnError e)
         {
@@ -180,6 +180,6 @@ class PythonModule : BuildModule
         if (tokens.length != 2)
             return null;
 
-        return tokens[1];
+        return string.joinv(".", tokens[1].split(".")[0:2]);
     }
 }
