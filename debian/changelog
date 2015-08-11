@@ -1,3 +1,9 @@
+bake (0.1.49+git20140824-7) changes-devel-unstable; urgency=medium
+
+  * [patches] Updated git:python_version.
+
+ -- Eugenio Paolantonio (g7) <me@medesimo.eu>  Tue, 11 Aug 2015 21:12:37 +0200
+
 bake (0.1.49+git20140824-6) changes-devel-unstable; urgency=medium
 
   * [packaging] Require the git:python_version patch.
