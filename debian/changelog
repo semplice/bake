@@ -1,3 +1,9 @@
+bake (0.1.49+git20140824-6) changes-devel-unstable; urgency=medium
+
+  * [packaging] Require the git:python_version patch.
+
+ -- Eugenio Paolantonio (g7) <me@medesimo.eu>  Tue, 11 Aug 2015 20:12:27 +0200
+
 bake (0.1.49+git20140824-5) changes-devel-unstable; urgency=medium
 
   * [packaging] Added git:gir_lookup to patches.
