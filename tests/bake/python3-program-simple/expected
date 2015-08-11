@@ -1,9 +1,11 @@
 !bake
+python3.2 --version
 mkdir -p __pycache__
 python3.2 -m py_compile test.py
 mkdir -p .built
 (exit SUCCESS)
 !bake install
+python3.2 --version
 mkdir -p /usr/share/test-project
 cp test.py /usr/share/test-project/test.py
 mkdir -p /usr/share/test-project/__pycache__
@@ -12,11 +14,13 @@ mkdir -p /usr/bin
 cp .built/test /usr/bin/test
 (exit SUCCESS)
 !bake uninstall
+python3.2 --version
 rm -f /usr/share/test-project/test.py
 rm -f /usr/share/test-project/__pycache__/test.cpython-32.pyc
 rm -f /usr/bin/test
 (exit SUCCESS)
 !bake clean
+python3.2 --version
 rm -rf .built/
 rm -f __pycache__/test.cpython-32.pyc
 rm -rf __pycache__/

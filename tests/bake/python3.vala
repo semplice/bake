@@ -9,7 +9,7 @@ public class Python
         {
             if (args[i] == "--version")
             {
-                stderr.printf ("Python 3.2\n");
+                stdout.printf ("Python 3.2\n");
             }
             else if (args[i] == "-m")
             {

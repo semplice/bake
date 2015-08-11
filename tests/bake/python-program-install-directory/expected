@@ -1,18 +1,22 @@
 !bake
+python --version
 python -m py_compile test.py
 mkdir -p .built
 (exit SUCCESS)
 !bake install
+python --version
 mkdir -p /usr/share/test-project
 cp test.pyc /usr/share/test-project/test.pyc
 mkdir -p /usr/bin/test
 cp .built/test /usr/bin/test/test
 (exit SUCCESS)
 !bake uninstall
+python --version
 rm -f /usr/share/test-project/test.pyc
 rm -f /usr/bin/test/test
 (exit SUCCESS)
 !bake clean
+python --version
 rm -rf .built/
 rm -f test.pyc
 rm -f test

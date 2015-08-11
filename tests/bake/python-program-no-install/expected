@@ -1,12 +1,16 @@
 !bake
+python --version
 python -m py_compile test.py
 mkdir -p .built
 (exit SUCCESS)
 !bake install
+python --version
 (exit SUCCESS)
 !bake uninstall
+python --version
 (exit SUCCESS)
 !bake clean
+python --version
 rm -rf .built/
 rm -f test.pyc
 rm -f test
