@@ -96,8 +96,8 @@ class PythonModule : BuildModule
     {
         var recipe = compilable.recipe;
 
-        var python_version = compilable.get_variable ("python-version");
         var python_bin = get_python_bin (compilable);
+        var python_version = get_version (python_bin);
         var python_cache_dir = "__pycache__";
 
         var install_sources = compilable.get_boolean_variable ("install-sources");
